@@ -13,6 +13,8 @@
 		AACF999A1B39995300E027D6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AACF99981B39995300E027D6 /* LaunchScreen.xib */; };
 		AACF99A61B39995300E027D6 /* ProductsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF99A51B39995300E027D6 /* ProductsTests.m */; };
 		AACF99B01B399A4500E027D6 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = AACF99AF1B399A4500E027D6 /* Entitlements.plist */; };
+		AACF99B31B399DEB00E027D6 /* ProductsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF99B21B399DEB00E027D6 /* ProductsListTableViewController.m */; };
+		AACF99B61B399E7200E027D6 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF99B51B399E7200E027D6 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 		AACF99A41B39995300E027D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACF99A51B39995300E027D6 /* ProductsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductsTests.m; sourceTree = "<group>"; };
 		AACF99AF1B399A4500E027D6 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Entitlements.plist; path = ../Entitlements.plist; sourceTree = "<group>"; };
+		AACF99B11B399DEB00E027D6 /* ProductsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductsListTableViewController.h; path = Products/ProductsListTableViewController.h; sourceTree = "<group>"; };
+		AACF99B21B399DEB00E027D6 /* ProductsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductsListTableViewController.m; path = Products/ProductsListTableViewController.m; sourceTree = "<group>"; };
+		AACF99B41B399E7200E027D6 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = Products/AboutViewController.h; sourceTree = "<group>"; };
+		AACF99B51B399E7200E027D6 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = Products/AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 		AACF99831B39995300E027D6 = {
 			isa = PBXGroup;
 			children = (
+				AACF99B11B399DEB00E027D6 /* ProductsListTableViewController.h */,
+				AACF99B21B399DEB00E027D6 /* ProductsListTableViewController.m */,
+				AACF99B41B399E7200E027D6 /* AboutViewController.h */,
+				AACF99B51B399E7200E027D6 /* AboutViewController.m */,
 				AACF99A21B39995300E027D6 /* ProductsTests */,
 				AACF998E1B39995300E027D6 /* Products */,
 				AACF998D1B39995300E027D6 /* Products */,
@@ -216,6 +226,8 @@
 			files = (
 				AACF99951B39995300E027D6 /* AppDelegate.m in Sources */,
 				AACF99921B39995300E027D6 /* main.m in Sources */,
+				AACF99B61B399E7200E027D6 /* AboutViewController.m in Sources */,
+				AACF99B31B399DEB00E027D6 /* ProductsListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +422,7 @@
 				AACF99AB1B39995300E027D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AACF99AC1B39995300E027D6 /* Build configuration list for PBXNativeTarget "ProductsTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +431,7 @@
 				AACF99AE1B39995300E027D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

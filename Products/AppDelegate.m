@@ -7,19 +7,30 @@
 //
 
 #import "AppDelegate.h"
+#import "ProductsListTableViewController.h"
+#import "AboutViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+@synthesize tabBarController = _tabBarController;
 
-
+- (void) dealloc {
+    [_window release];
+    [super dealloc];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    
+    UITableViewController *productsListTableViewController = [[ProductsListTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UIViewController *aboutViewController = [[AboutViewController alloc] init];
+    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:productsListTableViewController,aboutViewController, nil];
+    [[self window] setRootViewController:self.tabBarController];
+//    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
