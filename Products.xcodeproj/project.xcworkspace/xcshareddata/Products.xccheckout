@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D1DE4F35-101A-450E-9390-115CF11A5C7D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Products</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A90F841BAA20E4000591365AFCFB420DA5750604</key>
 		<string>https://github.com/Fenkins/Products.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Products.xcodeproj</string>
+	<string>Products.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A90F841BAA20E4000591365AFCFB420DA5750604</key>

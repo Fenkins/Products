@@ -14,14 +14,14 @@
 
 @implementation ProductsListTableViewController
 
-//-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if (self) {
-//        self.title = NSLocalizedString(@"Products", @"List of products availible");
-//        self.tabBarItem.image = [UIImage imageNamed:@"products_bar_pic"];
-//    }
-//    return self;
-//}
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = NSLocalizedString(@"Products", @"List of products availible");
+        self.tabBarItem.image = [UIImage imageNamed:@"products_bar_pic"];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,12 +42,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 5;
+    return 0;
 }
 
 /*

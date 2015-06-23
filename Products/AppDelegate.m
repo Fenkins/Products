@@ -23,13 +23,21 @@
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UITableViewController *productsListTableViewController = [[ProductsListTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    UITableViewController *productsListTableViewController = [[ProductsListTableViewController alloc] init];
     UIViewController *aboutViewController = [[AboutViewController alloc] init];
     self.tabBarController = [[UITabBarController alloc] init];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:productsListTableViewController,aboutViewController, nil];
-    [[self window] setRootViewController:self.tabBarController];
-//    self.window.rootViewController = self.tabBarController;
+    self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
+    
+    
+//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+//    // Override point for customization after application launch.
+//    self.viewController = [[UIViewController alloc] init];
+//    self.window.rootViewController = self.viewController;
+//    [self.window makeKeyAndVisible];
     
     return YES;
 }

@@ -14,14 +14,14 @@
 
 @implementation AboutViewController
 
-//-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-//    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-//    if (self) {
-//        self.title = NSLocalizedString(@"About us", @"Information about our company");
-//        self.tabBarItem.image = [UIImage imageNamed:@"aboutUs_bar_pic"];
-//    }
-//    return self;
-//}
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.title = NSLocalizedString(@"About us", @"Information about our company");
+        self.tabBarItem.image = [UIImage imageNamed:@"aboutUs_bar_pic"];
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
