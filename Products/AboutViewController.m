@@ -18,7 +18,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"About us", @"Information about our company");
-        self.tabBarItem.image = [UIImage imageNamed:@"aboutUs_bar_pic"];
+        self.tabBarItem.image = [UIImage imageNamed:@"about_us_bar_pic.png"];
     }
     return self;
 }

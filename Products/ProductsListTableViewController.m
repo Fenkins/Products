@@ -18,7 +18,10 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Products", @"List of products availible");
-        self.tabBarItem.image = [UIImage imageNamed:@"products_bar_pic"];
+        self.tabBarItem.image = [UIImage imageNamed:@"products_bar_pic.png"];
+        if (self.tabBarItem.image == nil) {
+            NSLog(@"AssHat");
+        }
     }
     return self;
 }
