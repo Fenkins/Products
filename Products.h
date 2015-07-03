@@ -5,6 +5,8 @@
 //  Created by Fenkins on 03/07/15.
 //  Copyright (c) 2015 Fenkins. All rights reserved.
 //
+// Helper class with custom initializer
+// This one will help us create an object with name, description and image of the product in ProductsParser
 
 #import <Foundation/Foundation.h>
 
