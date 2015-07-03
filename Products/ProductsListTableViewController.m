@@ -8,6 +8,9 @@
 
 #import "ProductsListTableViewController.h"
 
+#import "Products.h"
+#import "ProductsParser.h"
+
 @interface ProductsListTableViewController ()
 
 @end
