@@ -10,4 +10,13 @@
 
 @interface Products : NSObject
 
+@property (retain,nonatomic)NSString *productName;
+@property (retain,nonatomic)NSString *productDescription;
+@property (retain,nonatomic)NSString *productImage;
+
+-(id) initWithName: (NSString *) name
+       description: (NSString *) description
+             image: (NSString *) image;
+
+
 @end

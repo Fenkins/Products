@@ -10,4 +10,16 @@
 
 @implementation Products
 
+-(id) initWithName:(NSString *)name description:(NSString *)description image:(NSString *)image {
+    self = [super init];
+    
+    if (self) {
+        self.productName = name;
+        self.productDescription = description;
+        self.productImage = image;
+    }
+    return self;
+}
+
+
 @end
