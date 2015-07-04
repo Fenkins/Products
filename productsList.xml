@@ -3,31 +3,31 @@
 	<Product id="0">
 		<Name>Box of chocolate</Name>
 		<Description>Box full of chocolate, very tasty</Description>
-        <Image></Image>
+        <Image>Image</Image>
 	</Product>
 	<Product id="1">
 		<Name>Box of nails</Name>
 		<Description>Box full of nails. Dont eat those.</Description>
-        <Image></Image>
+        <Image>Image</Image>
 	</Product>
 	<Product id="2">
 		<Name>Box of clothes</Name>
 		<Description>Tops, hoodies, jampers and so on</Description>
-        <Image></Image>
+        <Image>Image</Image>
 	</Product>
 	<Product id="3">
 		<Name>Box of toys</Name>
 		<Description>Toys that kids love</Description>
-        <Image></Image>
+        <Image>Image</Image>
 	</Product>
 	<Product id="4">
 		<Name>Box of wood</Name>
 		<Description>Cardboard box, filled with wood. Logic? No logic.</Description>
-        <Image></Image>
+        <Image>Image</Image>
 	</Product>
 	<Product id="5">
 		<Name>Box of car accessories</Name>
 		<Description>Various accessories for any car availible on the market</Description>
-        <Image></Image>
+        <Image>Image</Image>
 	</Product>
 </Products_list>

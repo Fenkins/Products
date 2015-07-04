@@ -40,6 +40,9 @@
     self.productArray = [[NSMutableArray alloc] init];
     ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];
     [menuParser parseXMLFile];
+    NSLog(@"Count %ul", self.productArray.count);
+    Products *firstProduct = self.productArray[1];
+    NSLog(@"First %@", firstProduct.productDescription);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,14 +59,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
+//    return 0;
     return self.productArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+//    if (cell != nil) {
+//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+//    }
     // Configure the cell...
+    Products *product = self.productArray[indexPath.row];
+    NSLog(@"Look: %@",product.productName);
+//    cell.textLabel.text = product.productName;
+    
+    
     
     return cell;
 }
