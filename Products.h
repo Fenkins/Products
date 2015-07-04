@@ -12,12 +12,13 @@
 
 @interface Products : NSObject
 
-@property (readwrite)NSString *productName;
-@property (readwrite)NSString *productDescription;
-@property (readwrite)NSString *productImage;
+@property (assign)NSString *productName;
+@property (assign)NSString *productDescription;
+@property (assign)NSString *productImage;
 
--(id) initWithName: (NSString *)name
-       description: (NSString *)description
-             image: (NSString *)image;
+-(id) initWithName: (NSString *) name
+       description: (NSString *) description
+             image: (NSString *) image;
+
 
 @end
