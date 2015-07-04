@@ -13,6 +13,8 @@
 
 @interface ProductsListTableViewController ()
 
+@property NSMutableArray *productArray;
+
 @end
 
 @implementation ProductsListTableViewController
@@ -23,7 +25,7 @@
         self.title = NSLocalizedString(@"Products", @"List of products availible");
         self.tabBarItem.image = [UIImage imageNamed:@"products_bar_pic.png"];
         if (self.tabBarItem.image == nil) {
-            NSLog(@"AssHat");
+            NSLog(@"tabBarItem is nil");
         }
     }
     return self;
@@ -35,8 +37,9 @@
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.productArray = [[NSMutableArray alloc] init];
+    ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];
+    [menuParser parseXMLFile];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,15 +51,15 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 0;
+    return self.productArray.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
@@ -64,7 +67,7 @@
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
