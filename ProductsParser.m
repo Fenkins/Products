@@ -15,9 +15,9 @@
 @property NSXMLParser *parser;
 @property NSString *element;
 
-@property NSString *currentProductName;
-@property NSString *currentProductDescription;
-@property NSString *currentProductImage;
+@property NSMutableString *currentProductName;
+@property NSMutableString *currentProductDescription;
+@property NSMutableString *currentProductImage;
 
 @end
 
@@ -38,6 +38,7 @@
     self.parser = [[NSXMLParser alloc]initWithContentsOfURL:xmlPath];
     self.parser.delegate = self;
     [self.parser parse];
+    [self.parser release];
 }
 
 -(void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
@@ -45,31 +46,52 @@
 }
 
 -(void) parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+    
     if ([self.element isEqualToString:@"Name"]) {
-        // string is a returned string that is just being analized
-        self.currentProductName = [NSString stringWithFormat:@"%@",string];
-//        NSLog(@"String: %@", string);
+        if (self.currentProductName == nil) {
+            self.currentProductName = [[NSMutableString alloc] initWithString:string];
+        } else {
+            [self.currentProductName appendString:string];
+        }
     }
     if ([self.element isEqualToString:@"Description"]) {
-        self.currentProductDescription = [NSString stringWithFormat:@"%@",string];
-//        NSLog(@"String: %@", string);
-    }
-    if ([self.element isEqualToString:@"Image"]) {
-        self.currentProductImage = [NSString stringWithFormat:@"%@",string];
-//        NSLog(@"String: %@", string);
+        if (self.currentProductDescription == nil) {
+            self.currentProductDescription = [[NSMutableString alloc] initWithString:string];
+        } else {
+            [self.currentProductDescription appendString:string];
+        }
+    }    if ([self.element isEqualToString:@"Image"]) {
+        if (self.currentProductImage == nil) {
+            self.currentProductImage = [[NSMutableString alloc] initWithString:string];
+        } else {
+            [self.currentProductImage appendString:string];
+        }
     }
 }
 
 -(void) parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
     if ([elementName isEqualToString:@"Product"]) {
         Products *thisProduct = [[Products alloc] initWithName:self.currentProductName description:self.currentProductDescription image:self.currentProductImage];
-        if (thisProduct == nil) {
-            NSLog(@"thisProduct is equal to nil. Find out why.");
-        }
+        
         [self.productArray addObject:thisProduct];
-        if (self.productArray == nil) {
-            NSLog(@"It is most likely you forgot to alloc-init productArray");
-        }
+
+        
+        [self.currentProductName release];
+        self.currentProductName = nil;
+        
+        
+        [self.currentProductDescription release];
+        self.currentProductDescription = nil;
+        
+        
+        [self.currentProductImage release];
+        self.currentProductImage = nil;
+        
+        
+        [thisProduct release];
+        thisProduct = nil;
+        
+        
         [self.element release];
         self.element = nil;
     }

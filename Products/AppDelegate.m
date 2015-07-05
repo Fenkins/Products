@@ -25,10 +25,10 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UITableViewController *productsListTableViewController = [[ProductsListTableViewController alloc] init];
+    UITableViewController *productsListTableViewController = [[[ProductsListTableViewController alloc] init] autorelease];
     UIViewController *aboutViewController = [[AboutViewController alloc] init];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:productsListTableViewController,aboutViewController, nil];
+    self.tabBarController.viewControllers = [[NSArray arrayWithObjects:productsListTableViewController,aboutViewController, nil]autorelease];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     
