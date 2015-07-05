@@ -12,9 +12,9 @@
 
 @interface Products : NSObject
 
-@property (assign)NSString *productName;
-@property (assign)NSString *productDescription;
-@property (assign)NSString *productImage;
+@property (nonatomic,retain)NSString *productName;
+@property (nonatomic,retain)NSString *productDescription;
+@property (nonatomic,retain)NSString *productImage;
 
 -(id) initWithName: (NSString *) name
        description: (NSString *) description

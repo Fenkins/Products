@@ -1,3 +1,4 @@
+
 //
 //  ProductsParser.m
 //  Products
@@ -23,7 +24,6 @@
 
 
 @implementation ProductsParser
-
 -(id) initWithArray:(NSMutableArray *)productArray {
     self = [super init];
     if (self) {
@@ -46,13 +46,17 @@
 
 -(void) parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     if ([self.element isEqualToString:@"Name"]) {
-        self.currentProductName = string;
+        // string is a returned string that is just being analized
+        self.currentProductName = [NSString stringWithFormat:@"%@",string];
+//        NSLog(@"String: %@", string);
     }
     if ([self.element isEqualToString:@"Description"]) {
-        self.currentProductDescription = string;
+        self.currentProductDescription = [NSString stringWithFormat:@"%@",string];
+//        NSLog(@"String: %@", string);
     }
     if ([self.element isEqualToString:@"Image"]) {
-        self.currentProductImage = string;
+        self.currentProductImage = [NSString stringWithFormat:@"%@",string];
+//        NSLog(@"String: %@", string);
     }
 }
 
@@ -61,12 +65,12 @@
         Products *thisProduct = [[Products alloc] initWithName:self.currentProductName description:self.currentProductDescription image:self.currentProductImage];
         if (thisProduct == nil) {
             NSLog(@"thisProduct is equal to nil. Find out why.");
-        } else {
-            [self.productArray addObject:thisProduct];
         }
+        [self.productArray addObject:thisProduct];
         if (self.productArray == nil) {
             NSLog(@"It is most likely you forgot to alloc-init productArray");
         }
+        [self.element release];
         self.element = nil;
     }
 }

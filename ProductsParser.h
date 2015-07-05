@@ -11,7 +11,7 @@
 
 @interface ProductsParser : NSObject <NSXMLParserDelegate>
 
-@property (retain,nonatomic) NSMutableArray *productArray;
+@property (nonatomic,retain) NSMutableArray *productArray;
 
 -(id) initWithArray:(NSMutableArray *) productArray;
 -(void) parseXMLFile;

@@ -13,7 +13,8 @@
 
 @interface ProductsListTableViewController ()
 
-@property NSMutableArray *productArray;
+@property (strong,nonatomic)NSMutableArray *productArray;
+
 
 @end
 
@@ -40,9 +41,11 @@
     self.productArray = [[NSMutableArray alloc] init];
     ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];
     [menuParser parseXMLFile];
+    // The parser is done, we can release it immediately
+    [menuParser release];
     NSLog(@"Count %ul", self.productArray.count);
-    Products *firstProduct = self.productArray[1];
-    NSLog(@"First %@", firstProduct.productDescription);
+    Products *firstProduct = self.productArray[0];
+    NSLog(@"First %@", firstProduct.productName);
 }
 
 - (void)didReceiveMemoryWarning {
