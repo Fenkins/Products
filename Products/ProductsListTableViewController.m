@@ -45,7 +45,9 @@
     [menuParser release];
     NSLog(@"Count %ul", self.productArray.count);
     Products *firstProduct = self.productArray[0];
-    NSLog(@"First %@", firstProduct.productName);
+    Products *secondProduct = self.productArray[1];
+    NSLog(@"%@", firstProduct.productName);
+    NSLog(@"%@", secondProduct.productName);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,13 +59,13 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-//    return 0;
-    return self.productArray.count;
+    return 0;
+//    return self.productArray.count;
 }
 
 
@@ -77,12 +79,15 @@
 //    Products *product = self.productArray[indexPath.row];
 //    NSLog(@"Look: %@",product.productName);
 //    cell.textLabel.text = product.productName;
-    int i = 0;
-    for (i = 0; i == self.productArray.count ; i++) {
-        cell.textLabel.text = self.productArray[i];
-        NSLog(@"Look: %@",self.productArray[i]);
-    }
-    
+//    int i = 0;
+//    for (i = 0; i == self.productArray.count ; i++) {
+//        cell.textLabel.text = self.productArray[i];
+//        
+//    
+//        NSLog(@"Look: %@",self.productArray[0]);
+//        NSLog(@"Look: %@",self.productArray[1]);
+
+  //  }
     
     
     return cell;

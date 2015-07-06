@@ -38,7 +38,7 @@
     self.parser = [[NSXMLParser alloc]initWithContentsOfURL:xmlPath];
     self.parser.delegate = self;
     [self.parser parse];
-    [self.parser release];
+//    [self.parser release];
 }
 
 -(void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
