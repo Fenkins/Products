@@ -47,6 +47,10 @@
 
 -(void) parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     
+    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"  " withString:@""];
+    
     if ([self.element isEqualToString:@"Name"]) {
         if (self.currentProductName == nil) {
             self.currentProductName = [[NSMutableString alloc] initWithString:string];

@@ -74,9 +74,14 @@
 //        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
 //    }
     // Configure the cell...
-    Products *product = self.productArray[indexPath.row];
-    NSLog(@"Look: %@",product.productName);
+//    Products *product = self.productArray[indexPath.row];
+//    NSLog(@"Look: %@",product.productName);
 //    cell.textLabel.text = product.productName;
+    int i = 0;
+    for (i = 0; i == self.productArray.count ; i++) {
+        cell.textLabel.text = self.productArray[i];
+        NSLog(@"Look: %@",self.productArray[i]);
+    }
     
     
     
