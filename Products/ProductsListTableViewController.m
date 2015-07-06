@@ -42,7 +42,7 @@
     ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];
     [menuParser parseXMLFile];
     // The parser is done, we can release it immediately
-    [menuParser release];
+    //[menuParser release];
     NSLog(@"Count %ul", self.productArray.count);
     Products *firstProduct = self.productArray[0];
     Products *secondProduct = self.productArray[1];
@@ -59,26 +59,25 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 0;
-//    return self.productArray.count;
+    return self.productArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-//    if (cell != nil) {
-//        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-//    }
+    if (cell != nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
     // Configure the cell...
-//    Products *product = self.productArray[indexPath.row];
+    Products *product = self.productArray[indexPath.row];
 //    NSLog(@"Look: %@",product.productName);
-//    cell.textLabel.text = product.productName;
+    cell.textLabel.text = product.productName;
 //    int i = 0;
 //    for (i = 0; i == self.productArray.count ; i++) {
 //        cell.textLabel.text = self.productArray[i];

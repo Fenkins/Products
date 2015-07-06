@@ -80,23 +80,23 @@
         [self.productArray addObject:thisProduct];
 
         
-        [self.currentProductName release];
+        //[self.currentProductName release];
         self.currentProductName = nil;
         
         
-        [self.currentProductDescription release];
+        //[self.currentProductDescription release];
         self.currentProductDescription = nil;
         
         
-        [self.currentProductImage release];
+        //[self.currentProductImage release];
         self.currentProductImage = nil;
         
         
-        [thisProduct release];
+        //[thisProduct release];
         thisProduct = nil;
         
         
-        [self.element release];
+        //[self.element release];
         self.element = nil;
     }
 }
