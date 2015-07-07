@@ -66,6 +66,12 @@
             break;
         case 1:
             cell.textLabel.text = passedProduct.productDescription;
+            
+            [cell.textLabel setAdjustsFontSizeToFitWidth:true];
+            [cell.textLabel setMinimumScaleFactor:0.8];
+            if (cell.textLabel.minimumScaleFactor <= 0.9) {
+                [cell.textLabel setNumberOfLines:2];
+            }
             break;
         case 2:
             cell.imageView.image = [UIImage imageNamed:passedProduct.productImage];
