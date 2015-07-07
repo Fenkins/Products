@@ -42,8 +42,8 @@
     ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];
     [menuParser parseXMLFile];
     // The parser is done, we can release it immediately
-    //[menuParser release];
-    NSLog(@"Count %ul", self.productArray.count);
+    [menuParser release];
+    NSLog(@"Count %i", (int)self.productArray.count);
     Products *firstProduct = self.productArray[0];
     Products *secondProduct = self.productArray[1];
     NSLog(@"%@", firstProduct.productName);
@@ -76,18 +76,7 @@
     }
     // Configure the cell...
     Products *product = self.productArray[indexPath.row];
-//    NSLog(@"Look: %@",product.productName);
     cell.textLabel.text = product.productName;
-//    int i = 0;
-//    for (i = 0; i == self.productArray.count ; i++) {
-//        cell.textLabel.text = self.productArray[i];
-//        
-//    
-//        NSLog(@"Look: %@",self.productArray[0]);
-//        NSLog(@"Look: %@",self.productArray[1]);
-
-  //  }
-    
     
     return cell;
 }
