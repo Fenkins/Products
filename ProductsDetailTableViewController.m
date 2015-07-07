@@ -16,9 +16,9 @@
 @synthesize passedProduct;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"Name: %@", passedProduct.productName);
+    NSLog(@"Name: %@", passedProduct.productDescription);
     
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStyleDone target:self action:nil];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStyleDone target:self action:@selector(cancel)];
     self.navigationItem.leftBarButtonItem = backButton;
     
     // Uncomment the following line to preserve selection between presentations.
@@ -28,7 +28,11 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-
+- (IBAction)cancel {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 
 
 - (void)didReceiveMemoryWarning {
@@ -39,26 +43,43 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 3;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    if (cell != nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    switch (indexPath.row) {
+        case 0:
+            cell.textLabel.text = passedProduct.productName;
+            break;
+        case 1:
+            cell.textLabel.text = passedProduct.productDescription;
+            break;
+        case 2:
+            cell.imageView.image = [UIImage imageNamed:passedProduct.productImage];
+            break;
+        default:
+            cell.textLabel.text = [[NSString alloc] initWithString:@"Something goes wrong"];
+            break;
+    }
     // Configure the cell...
+    
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
