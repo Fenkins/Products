@@ -8,9 +8,6 @@
 
 #import "ProductsListTableViewController.h"
 
-#import "Products.h"
-#import "ProductsParser.h"
-
 @interface ProductsListTableViewController ()
 
 @property (strong,nonatomic)NSMutableArray *productArray;
@@ -77,8 +74,20 @@
     // Configure the cell...
     Products *product = self.productArray[indexPath.row];
     cell.textLabel.text = product.productName;
-    
+
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
+    ProductsDetailTableViewController *productDetVC = [[ProductsDetailTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:productDetVC];
+    
+    Products *productSelected = self.productArray[indexPath.row];
+    productDetVC.passedProduct = productSelected;
+    
+    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+    [self presentViewController:navController animated:true completion:nil];
 }
 
 

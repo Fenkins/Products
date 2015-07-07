@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA03209F1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03209E1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m */; };
 		AA51AEC01B39D6C0007D0350 /* about_us_bar_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = AA51AEBF1B39D6C0007D0350 /* about_us_bar_pic.png */; };
 		AA51AEC21B39D6DF007D0350 /* products_bar_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = AA51AEC11B39D6DF007D0350 /* products_bar_pic.png */; };
 		AA9D1BEF1B46B89000C8B099 /* productsList.xml in Resources */ = {isa = PBXBuildFile; fileRef = AA9D1BEE1B46B89000C8B099 /* productsList.xml */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA03209D1B4C0F44002EB3B4 /* ProductsDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsDetailTableViewController.h; sourceTree = "<group>"; };
+		AA03209E1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsDetailTableViewController.m; sourceTree = "<group>"; };
 		AA51AEBF1B39D6C0007D0350 /* about_us_bar_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_us_bar_pic.png; sourceTree = "<group>"; };
 		AA51AEC11B39D6DF007D0350 /* products_bar_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = products_bar_pic.png; sourceTree = "<group>"; };
 		AA9D1BEE1B46B89000C8B099 /* productsList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = productsList.xml; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 			children = (
 				AACF99B11B399DEB00E027D6 /* ProductsListTableViewController.h */,
 				AACF99B21B399DEB00E027D6 /* ProductsListTableViewController.m */,
+				AA03209D1B4C0F44002EB3B4 /* ProductsDetailTableViewController.h */,
+				AA03209E1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m */,
 				AACF99B41B399E7200E027D6 /* AboutViewController.h */,
 				AACF99B51B399E7200E027D6 /* AboutViewController.m */,
 				AA9D1BF01B46B8F500C8B099 /* Parsing */,
@@ -265,6 +270,7 @@
 				AA9D1BF31B46BC4800C8B099 /* Products.m in Sources */,
 				AACF99951B39995300E027D6 /* AppDelegate.m in Sources */,
 				AACF99921B39995300E027D6 /* main.m in Sources */,
+				AA03209F1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m in Sources */,
 				AACF99B61B399E7200E027D6 /* AboutViewController.m in Sources */,
 				AA9D1BF61B46BC9900C8B099 /* ProductsParser.m in Sources */,
 				AACF99B31B399DEB00E027D6 /* ProductsListTableViewController.m in Sources */,

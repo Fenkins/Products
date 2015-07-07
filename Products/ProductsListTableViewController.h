@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Products.h"
+#import "ProductsParser.h"
+#import "ProductsDetailTableViewController.h"
 
 @interface ProductsListTableViewController : UITableViewController //<UITableViewDataSource,UITableViewDelegate>
 
