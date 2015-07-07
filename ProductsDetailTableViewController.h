@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Products.h"
+#import "CustomTableViewCell.h"
 
 @interface ProductsDetailTableViewController : UITableViewController
 

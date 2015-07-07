@@ -56,9 +56,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    CustomTableViewCell *cell = [[CustomTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     if (cell != nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[CustomTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     switch (indexPath.row) {
         case 0:
@@ -74,6 +74,16 @@
             }
             break;
         case 2:
+
+            
+//            UIImageView *imgView = [UIImageView all]
+//            
+//            UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 100.0, 100.0)];
+//            [imgView setImage:[UIImage imageNamed:passedProduct.productImage]];
+//            [cell.contentView addSubview:imgView];
+
+            
+            
             cell.imageView.image = [UIImage imageNamed:passedProduct.productImage];
             break;
         default:
