@@ -27,6 +27,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    CGRect screenRect = [[UIScreen mainScreen]bounds];
+    UILabel *aboutUsShort = [[UILabel alloc]initWithFrame:CGRectMake(screenRect.size.width/2, screenRect.size.height*1/4, screenRect.size.width*3/4, screenRect.size.height/6)];
+    aboutUsShort.backgroundColor = [UIColor redColor];
+    
+    UIButton *detailedInfoButton = [[UIButton alloc] initWithFrame:CGRectMake(screenRect.size.width/2, screenRect.size.height*3/4, screenRect.size.width*3/4, screenRect.size.height/6)];
+    detailedInfoButton.backgroundColor = [UIColor blueColor];
+    detailedInfoButton.layer.cornerRadius = 20;
+    
+    [self.view addSubview:aboutUsShort];
+    [self.view addSubview:detailedInfoButton];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -25,11 +25,14 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (IBAction)cancel {
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-}
+//UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStyleDone target:self action:@selector(cancel)];
+//self.navigationItem.leftBarButtonItem = backButton;
+
+//- (IBAction)cancel {
+//    
+//    [self dismissViewControllerAnimated:YES completion:nil];
+//    
+//}
 
 
 - (void)didReceiveMemoryWarning {

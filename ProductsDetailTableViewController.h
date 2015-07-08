@@ -13,6 +13,4 @@
 
 @property (retain,nonatomic) Products *passedProduct;
 
--(IBAction)cancel;
-
 @end
