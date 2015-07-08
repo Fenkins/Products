@@ -52,19 +52,30 @@
     return 3;
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 0) {
+        CGRect screenRect = [[UIScreen mainScreen]bounds];
+        return screenRect.size.width-screenRect.size.width/9;
+    } else {
+        return 44;
+    }
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
-    CustomTableViewCell *cell = [[CustomTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     if (cell != nil) {
-        cell = [[CustomTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     switch (indexPath.row) {
         case 0:
-            cell.textLabel.text = passedProduct.productName;
+            cell.imageView.image = [UIImage imageNamed:passedProduct.productImage];
             break;
         case 1:
+            cell.textLabel.text = passedProduct.productName;
+            break;
+        case 2:
             cell.textLabel.text = passedProduct.productDescription;
             
             [cell.textLabel setAdjustsFontSizeToFitWidth:true];
@@ -72,19 +83,6 @@
             if (cell.textLabel.minimumScaleFactor <= 0.9) {
                 [cell.textLabel setNumberOfLines:2];
             }
-            break;
-        case 2:
-
-            
-//            UIImageView *imgView = [UIImageView all]
-//            
-//            UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 100.0, 100.0)];
-//            [imgView setImage:[UIImage imageNamed:passedProduct.productImage]];
-//            [cell.contentView addSubview:imgView];
-
-            
-            
-            cell.imageView.image = [UIImage imageNamed:passedProduct.productImage];
             break;
         default:
             cell.textLabel.text = [[NSString alloc] initWithString:@"Something goes wrong"];

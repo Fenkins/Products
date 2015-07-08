@@ -12,12 +12,13 @@
 		AA0320A61B4C4E85002EB3B4 /* box_of_clothes.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0320A21B4C4E85002EB3B4 /* box_of_clothes.png */; };
 		AA0320A71B4C4E85002EB3B4 /* box_of_nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA0320A31B4C4E85002EB3B4 /* box_of_nails.jpg */; };
 		AA0320A81B4C4E85002EB3B4 /* box_of_toys.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0320A41B4C4E85002EB3B4 /* box_of_toys.png */; };
-		AA0320AC1B4C6B40002EB3B4 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0320AB1B4C6B40002EB3B4 /* CustomTableViewCell.m */; };
 		AA51AEC01B39D6C0007D0350 /* about_us_bar_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = AA51AEBF1B39D6C0007D0350 /* about_us_bar_pic.png */; };
 		AA51AEC21B39D6DF007D0350 /* products_bar_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = AA51AEC11B39D6DF007D0350 /* products_bar_pic.png */; };
 		AA9D1BEF1B46B89000C8B099 /* productsList.xml in Resources */ = {isa = PBXBuildFile; fileRef = AA9D1BEE1B46B89000C8B099 /* productsList.xml */; };
 		AA9D1BF31B46BC4800C8B099 /* Products.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9D1BF21B46BC4800C8B099 /* Products.m */; };
 		AA9D1BF61B46BC9900C8B099 /* ProductsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9D1BF51B46BC9900C8B099 /* ProductsParser.m */; };
+		AAA78E591B4C9ED400787321 /* box_of_car_acc.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA78E581B4C9ED400787321 /* box_of_car_acc.png */; };
+		AAA78E5B1B4C9F8400787321 /* box_of_wood.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA78E5A1B4C9F8400787321 /* box_of_wood.png */; };
 		AACF99921B39995300E027D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF99911B39995300E027D6 /* main.m */; };
 		AACF99951B39995300E027D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF99941B39995300E027D6 /* AppDelegate.m */; };
 		AACF99971B39995300E027D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACF99961B39995300E027D6 /* Images.xcassets */; };
@@ -45,8 +46,6 @@
 		AA0320A21B4C4E85002EB3B4 /* box_of_clothes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_of_clothes.png; sourceTree = "<group>"; };
 		AA0320A31B4C4E85002EB3B4 /* box_of_nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = box_of_nails.jpg; sourceTree = "<group>"; };
 		AA0320A41B4C4E85002EB3B4 /* box_of_toys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_of_toys.png; sourceTree = "<group>"; };
-		AA0320AA1B4C6B40002EB3B4 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
-		AA0320AB1B4C6B40002EB3B4 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
 		AA51AEBF1B39D6C0007D0350 /* about_us_bar_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_us_bar_pic.png; sourceTree = "<group>"; };
 		AA51AEC11B39D6DF007D0350 /* products_bar_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = products_bar_pic.png; sourceTree = "<group>"; };
 		AA9D1BEE1B46B89000C8B099 /* productsList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = productsList.xml; sourceTree = "<group>"; };
@@ -54,6 +53,8 @@
 		AA9D1BF21B46BC4800C8B099 /* Products.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Products.m; sourceTree = "<group>"; };
 		AA9D1BF41B46BC9900C8B099 /* ProductsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsParser.h; sourceTree = "<group>"; };
 		AA9D1BF51B46BC9900C8B099 /* ProductsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsParser.m; sourceTree = "<group>"; };
+		AAA78E581B4C9ED400787321 /* box_of_car_acc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_of_car_acc.png; sourceTree = "<group>"; };
+		AAA78E5A1B4C9F8400787321 /* box_of_wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_of_wood.png; sourceTree = "<group>"; };
 		AACF998C1B39995300E027D6 /* Products.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Products.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACF99901B39995300E027D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACF99911B39995300E027D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +106,8 @@
 				AA0320A21B4C4E85002EB3B4 /* box_of_clothes.png */,
 				AA0320A31B4C4E85002EB3B4 /* box_of_nails.jpg */,
 				AA0320A41B4C4E85002EB3B4 /* box_of_toys.png */,
+				AAA78E5A1B4C9F8400787321 /* box_of_wood.png */,
+				AAA78E581B4C9ED400787321 /* box_of_car_acc.png */,
 			);
 			name = boxesImages;
 			sourceTree = "<group>";
@@ -137,8 +140,6 @@
 				AACF99B21B399DEB00E027D6 /* ProductsListTableViewController.m */,
 				AA03209D1B4C0F44002EB3B4 /* ProductsDetailTableViewController.h */,
 				AA03209E1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m */,
-				AA0320AA1B4C6B40002EB3B4 /* CustomTableViewCell.h */,
-				AA0320AB1B4C6B40002EB3B4 /* CustomTableViewCell.m */,
 				AACF99B41B399E7200E027D6 /* AboutViewController.h */,
 				AACF99B51B399E7200E027D6 /* AboutViewController.m */,
 				AA9D1BF01B46B8F500C8B099 /* Parsing */,
@@ -286,7 +287,9 @@
 				AACF99971B39995300E027D6 /* Images.xcassets in Resources */,
 				AA0320A81B4C4E85002EB3B4 /* box_of_toys.png in Resources */,
 				AA0320A71B4C4E85002EB3B4 /* box_of_nails.jpg in Resources */,
+				AAA78E591B4C9ED400787321 /* box_of_car_acc.png in Resources */,
 				AA51AEC21B39D6DF007D0350 /* products_bar_pic.png in Resources */,
+				AAA78E5B1B4C9F8400787321 /* box_of_wood.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +313,6 @@
 				AA03209F1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m in Sources */,
 				AACF99B61B399E7200E027D6 /* AboutViewController.m in Sources */,
 				AA9D1BF61B46BC9900C8B099 /* ProductsParser.m in Sources */,
-				AA0320AC1B4C6B40002EB3B4 /* CustomTableViewCell.m in Sources */,
 				AACF99B31B399DEB00E027D6 /* ProductsListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
