@@ -28,7 +28,7 @@
     UITableViewController *productsListTableViewController = [[[ProductsListTableViewController alloc] init] autorelease];
     UIViewController *aboutViewController = [[AboutViewController alloc] init];
     UINavigationController *navController = [[[UINavigationController alloc]initWithRootViewController:productsListTableViewController]autorelease];
-
+    
     [[UINavigationBar appearance] setBarStyle:UIBarStyleDefault];
     [[UINavigationBar appearance] setBarTintColor:[UIColor greenColor]];
     [self.navController.navigationBar setTranslucent:NO];

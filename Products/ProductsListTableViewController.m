@@ -81,14 +81,21 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:true];
+
     ProductsDetailTableViewController *productDetVC = [[ProductsDetailTableViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:productDetVC];
-    
     Products *productSelected = self.productArray[indexPath.row];
     productDetVC.passedProduct = productSelected;
+
     
-    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-    [self presentViewController:navController animated:true completion:nil];
+    [self.navigationController pushViewController:productDetVC animated:true];
+    
+    
+    
+    
+    
+    
+//    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+//    [self presentViewController:navController animated:true completion:nil];
 }
 
 

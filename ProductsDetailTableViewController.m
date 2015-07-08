@@ -18,9 +18,6 @@
     [super viewDidLoad];
     NSLog(@"Name: %@", passedProduct.productDescription);
     
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStyleDone target:self action:@selector(cancel)];
-    self.navigationItem.leftBarButtonItem = backButton;
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -94,6 +91,9 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
+}
 
 /*
 // Override to support conditional editing of the table view.
