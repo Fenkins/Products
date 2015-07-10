@@ -51,6 +51,15 @@
     
     NSLog(@"button is working");
     
+//    UIView *aboutDetailedView = [[UIView alloc]init];
+//    [self.navigationController.view addSubview:aboutDetailedView];
+//    [self.navigationController.view presentViewController:aboutDetailedView animated:true completion:nil];
+
+    
+    UIViewController *aboutDetailedView = [[UIViewController alloc] init];
+    [self addChildViewController:aboutDetailedView];
+    [self presentViewController:aboutDetailedView animated:true completion:nil];
+    
     
 //    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 //    [self presentViewController:navController animated:true completion:nil];
