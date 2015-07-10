@@ -40,9 +40,25 @@
     detailedInfoButton.center = CGPointMake(screenRect.size.width/2, screenRect.size.height*4/6);
     detailedInfoButton.backgroundColor = [UIColor lightGrayColor];
     detailedInfoButton.layer.cornerRadius = 20;
+    [detailedInfoButton setTitle:@"More Info" forState:UIControlStateNormal];
+    [detailedInfoButton addTarget:self action:@selector(presentVC) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:aboutUsShort];
     [self.view addSubview:detailedInfoButton];
+}
+
+- (void) presentVC {
+    
+    NSLog(@"button is working");
+    
+    
+//    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+//    [self presentViewController:navController animated:true completion:nil];
+//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:productDetVC];
+//    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+//    [self presentViewController:navController animated:true completion:nil];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

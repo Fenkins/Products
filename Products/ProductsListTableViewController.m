@@ -88,14 +88,7 @@
 
     
     [self.navigationController pushViewController:productDetVC animated:true];
-    
-    
-    
-    
-    
-    
-//    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-//    [self presentViewController:navController animated:true completion:nil];
+
 }
 
 
