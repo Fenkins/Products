@@ -51,22 +51,15 @@
     
     NSLog(@"button is working");
     
-//    UIView *aboutDetailedView = [[UIView alloc]init];
-//    [self.navigationController.view addSubview:aboutDetailedView];
-//    [self.navigationController.view presentViewController:aboutDetailedView animated:true completion:nil];
+    
+    AboutDetailViewController *aboutDetailedView = [[AboutDetailViewController alloc] init];
+    UINavigationController *modalViewNavController =
+    [[UINavigationController alloc] initWithRootViewController:aboutDetailedView];
 
-    
-    UIViewController *aboutDetailedView = [[UIViewController alloc] init];
-    [self addChildViewController:aboutDetailedView];
-    [self presentViewController:aboutDetailedView animated:true completion:nil];
-    
-    
-//    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-//    [self presentViewController:navController animated:true completion:nil];
-//    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:productDetVC];
-//    [navController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-//    [self presentViewController:navController animated:true completion:nil];
-    
+    [modalViewNavController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+
+    [self presentViewController:modalViewNavController animated:true completion:nil];
+    [modalViewNavController release];
     
 }
 
