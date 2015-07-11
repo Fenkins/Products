@@ -10,4 +10,6 @@
 
 @interface AboutDetailViewController : UIViewController
 
+-(void) backButtonPressed;
+
 @end

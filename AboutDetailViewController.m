@@ -14,9 +14,19 @@
 
 @implementation AboutDetailViewController
 
+-(void) backButtonPressed {
+    [self.parentViewController dismissViewControllerAnimated:true completion:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]initWithTitle:@"back" style:UIBarButtonItemStyleDone target:self action:@selector(backButtonPressed)];
+
+    self.navigationItem.leftBarButtonItem = backButton;
+    [backButton release];
 }
 
 - (void)didReceiveMemoryWarning {
