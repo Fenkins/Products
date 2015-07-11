@@ -20,6 +20,7 @@
 		AAA78E591B4C9ED400787321 /* box_of_car_acc.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA78E581B4C9ED400787321 /* box_of_car_acc.png */; };
 		AAA78E5B1B4C9F8400787321 /* box_of_wood.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA78E5A1B4C9F8400787321 /* box_of_wood.png */; };
 		AAAE7FD91B507DA10032DD59 /* AboutDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE7FD81B507DA10032DD59 /* AboutDetailViewController.m */; };
+		AAAE7FDB1B51663D0032DD59 /* about_us_detail_Box.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAE7FDA1B51663D0032DD59 /* about_us_detail_Box.png */; };
 		AACF99921B39995300E027D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF99911B39995300E027D6 /* main.m */; };
 		AACF99951B39995300E027D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF99941B39995300E027D6 /* AppDelegate.m */; };
 		AACF99971B39995300E027D6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACF99961B39995300E027D6 /* Images.xcassets */; };
@@ -58,6 +59,7 @@
 		AAA78E5A1B4C9F8400787321 /* box_of_wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_of_wood.png; sourceTree = "<group>"; };
 		AAAE7FD71B507DA10032DD59 /* AboutDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutDetailViewController.h; sourceTree = "<group>"; };
 		AAAE7FD81B507DA10032DD59 /* AboutDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDetailViewController.m; sourceTree = "<group>"; };
+		AAAE7FDA1B51663D0032DD59 /* about_us_detail_Box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_us_detail_Box.png; sourceTree = "<group>"; };
 		AACF998C1B39995300E027D6 /* Products.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Products.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACF99901B39995300E027D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACF99911B39995300E027D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		AA0320A91B4C4E9A002EB3B4 /* boxesImages */ = {
 			isa = PBXGroup;
 			children = (
+				AAAE7FDA1B51663D0032DD59 /* about_us_detail_Box.png */,
 				AA0320A11B4C4E85002EB3B4 /* box_of_choco.jpg */,
 				AA0320A21B4C4E85002EB3B4 /* box_of_clothes.png */,
 				AA0320A31B4C4E85002EB3B4 /* box_of_nails.jpg */,
@@ -283,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAE7FDB1B51663D0032DD59 /* about_us_detail_Box.png in Resources */,
 				AA0320A51B4C4E85002EB3B4 /* box_of_choco.jpg in Resources */,
 				AA51AEC01B39D6C0007D0350 /* about_us_bar_pic.png in Resources */,
 				AA9D1BEF1B46B89000C8B099 /* productsList.xml in Resources */,
