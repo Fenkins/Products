@@ -40,6 +40,8 @@
     aboutUsBoxImgView.frame = CGRectMake(0.0, 0.0, screenRect.size.width/5, screenRect.size.width/5);
     aboutUsBoxImgView.center = CGPointMake(screenRect.size.width*4/10, screenRect.size.height/10);
     [detailedInfoLabel addSubview:aboutUsBoxImgView];
+    [aboutUsBoxImgView release];
+    [detailedInfoLabel release];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -68,14 +68,13 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    UITableViewCell *cell = [[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier]autorelease];
     if (cell != nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        cell = [[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier]autorelease];
     }
     // Configure the cell...
     Products *product = self.productArray[indexPath.row];
     cell.textLabel.text = product.productName;
-
     return cell;
 }
 
@@ -88,7 +87,8 @@
 
     
     [self.navigationController pushViewController:productDetVC animated:true];
-
+    
+    [productDetVC release];
 }
 
 

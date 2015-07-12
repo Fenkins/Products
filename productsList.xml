@@ -13,21 +13,21 @@
 	<Product id="2">
 		<Name>Box of clothes</Name>
 		<Description>Tops, hoodies, jampers and so on</Description>
-        <Image>box_of_clothes.png</Image>
+        <Image>box_of_clothes.jpg</Image>
 	</Product>
 	<Product id="3">
 		<Name>Box of toys</Name>
 		<Description>Toys that kids love</Description>
-        <Image>box_of_toys.png</Image>
+        <Image>box_of_toys.jpg</Image>
 	</Product>
 	<Product id="4">
 		<Name>Box of wood</Name>
 		<Description>Cardboard box, filled with wood</Description>
-        <Image>box_of_wood.png</Image>
+        <Image>box_of_wood.jpg</Image>
 	</Product>
 	<Product id="5">
 		<Name>Box of car accessories</Name>
 		<Description>Various accessories for any car availible on the market</Description>
-        <Image>box_of_car_acc.png</Image>
+        <Image>box_of_car_acc.jpg</Image>
 	</Product>
 </Products_list>

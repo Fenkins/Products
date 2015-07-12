@@ -9,16 +9,16 @@
 /* Begin PBXBuildFile section */
 		AA03209F1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03209E1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m */; };
 		AA0320A51B4C4E85002EB3B4 /* box_of_choco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA0320A11B4C4E85002EB3B4 /* box_of_choco.jpg */; };
-		AA0320A61B4C4E85002EB3B4 /* box_of_clothes.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0320A21B4C4E85002EB3B4 /* box_of_clothes.png */; };
 		AA0320A71B4C4E85002EB3B4 /* box_of_nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA0320A31B4C4E85002EB3B4 /* box_of_nails.jpg */; };
-		AA0320A81B4C4E85002EB3B4 /* box_of_toys.png in Resources */ = {isa = PBXBuildFile; fileRef = AA0320A41B4C4E85002EB3B4 /* box_of_toys.png */; };
 		AA51AEC01B39D6C0007D0350 /* about_us_bar_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = AA51AEBF1B39D6C0007D0350 /* about_us_bar_pic.png */; };
 		AA51AEC21B39D6DF007D0350 /* products_bar_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = AA51AEC11B39D6DF007D0350 /* products_bar_pic.png */; };
+		AA7ED67F1B52C426002D3732 /* box_of_car_acc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA7ED67B1B52C426002D3732 /* box_of_car_acc.jpg */; };
+		AA7ED6801B52C426002D3732 /* box_of_clothes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA7ED67C1B52C426002D3732 /* box_of_clothes.jpg */; };
+		AA7ED6811B52C426002D3732 /* box_of_toys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA7ED67D1B52C426002D3732 /* box_of_toys.jpg */; };
+		AA7ED6821B52C426002D3732 /* box_of_wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA7ED67E1B52C426002D3732 /* box_of_wood.jpg */; };
 		AA9D1BEF1B46B89000C8B099 /* productsList.xml in Resources */ = {isa = PBXBuildFile; fileRef = AA9D1BEE1B46B89000C8B099 /* productsList.xml */; };
 		AA9D1BF31B46BC4800C8B099 /* Products.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9D1BF21B46BC4800C8B099 /* Products.m */; };
 		AA9D1BF61B46BC9900C8B099 /* ProductsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AA9D1BF51B46BC9900C8B099 /* ProductsParser.m */; };
-		AAA78E591B4C9ED400787321 /* box_of_car_acc.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA78E581B4C9ED400787321 /* box_of_car_acc.png */; };
-		AAA78E5B1B4C9F8400787321 /* box_of_wood.png in Resources */ = {isa = PBXBuildFile; fileRef = AAA78E5A1B4C9F8400787321 /* box_of_wood.png */; };
 		AAAE7FD91B507DA10032DD59 /* AboutDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAE7FD81B507DA10032DD59 /* AboutDetailViewController.m */; };
 		AAAE7FDB1B51663D0032DD59 /* about_us_detail_Box.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAE7FDA1B51663D0032DD59 /* about_us_detail_Box.png */; };
 		AACF99921B39995300E027D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AACF99911B39995300E027D6 /* main.m */; };
@@ -45,18 +45,18 @@
 		AA03209D1B4C0F44002EB3B4 /* ProductsDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsDetailTableViewController.h; sourceTree = "<group>"; };
 		AA03209E1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsDetailTableViewController.m; sourceTree = "<group>"; };
 		AA0320A11B4C4E85002EB3B4 /* box_of_choco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = box_of_choco.jpg; sourceTree = "<group>"; };
-		AA0320A21B4C4E85002EB3B4 /* box_of_clothes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_of_clothes.png; sourceTree = "<group>"; };
 		AA0320A31B4C4E85002EB3B4 /* box_of_nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = box_of_nails.jpg; sourceTree = "<group>"; };
-		AA0320A41B4C4E85002EB3B4 /* box_of_toys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_of_toys.png; sourceTree = "<group>"; };
 		AA51AEBF1B39D6C0007D0350 /* about_us_bar_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_us_bar_pic.png; sourceTree = "<group>"; };
 		AA51AEC11B39D6DF007D0350 /* products_bar_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = products_bar_pic.png; sourceTree = "<group>"; };
+		AA7ED67B1B52C426002D3732 /* box_of_car_acc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = box_of_car_acc.jpg; sourceTree = "<group>"; };
+		AA7ED67C1B52C426002D3732 /* box_of_clothes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = box_of_clothes.jpg; sourceTree = "<group>"; };
+		AA7ED67D1B52C426002D3732 /* box_of_toys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = box_of_toys.jpg; sourceTree = "<group>"; };
+		AA7ED67E1B52C426002D3732 /* box_of_wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = box_of_wood.jpg; sourceTree = "<group>"; };
 		AA9D1BEE1B46B89000C8B099 /* productsList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = productsList.xml; sourceTree = "<group>"; };
 		AA9D1BF11B46BC4800C8B099 /* Products.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Products.h; sourceTree = "<group>"; };
 		AA9D1BF21B46BC4800C8B099 /* Products.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Products.m; sourceTree = "<group>"; };
 		AA9D1BF41B46BC9900C8B099 /* ProductsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsParser.h; sourceTree = "<group>"; };
 		AA9D1BF51B46BC9900C8B099 /* ProductsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsParser.m; sourceTree = "<group>"; };
-		AAA78E581B4C9ED400787321 /* box_of_car_acc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_of_car_acc.png; sourceTree = "<group>"; };
-		AAA78E5A1B4C9F8400787321 /* box_of_wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box_of_wood.png; sourceTree = "<group>"; };
 		AAAE7FD71B507DA10032DD59 /* AboutDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutDetailViewController.h; sourceTree = "<group>"; };
 		AAAE7FD81B507DA10032DD59 /* AboutDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDetailViewController.m; sourceTree = "<group>"; };
 		AAAE7FDA1B51663D0032DD59 /* about_us_detail_Box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_us_detail_Box.png; sourceTree = "<group>"; };
@@ -109,11 +109,11 @@
 			children = (
 				AAAE7FDA1B51663D0032DD59 /* about_us_detail_Box.png */,
 				AA0320A11B4C4E85002EB3B4 /* box_of_choco.jpg */,
-				AA0320A21B4C4E85002EB3B4 /* box_of_clothes.png */,
 				AA0320A31B4C4E85002EB3B4 /* box_of_nails.jpg */,
-				AA0320A41B4C4E85002EB3B4 /* box_of_toys.png */,
-				AAA78E5A1B4C9F8400787321 /* box_of_wood.png */,
-				AAA78E581B4C9ED400787321 /* box_of_car_acc.png */,
+				AA7ED67B1B52C426002D3732 /* box_of_car_acc.jpg */,
+				AA7ED67C1B52C426002D3732 /* box_of_clothes.jpg */,
+				AA7ED67D1B52C426002D3732 /* box_of_toys.jpg */,
+				AA7ED67E1B52C426002D3732 /* box_of_wood.jpg */,
 			);
 			name = boxesImages;
 			sourceTree = "<group>";
@@ -290,15 +290,15 @@
 				AA0320A51B4C4E85002EB3B4 /* box_of_choco.jpg in Resources */,
 				AA51AEC01B39D6C0007D0350 /* about_us_bar_pic.png in Resources */,
 				AA9D1BEF1B46B89000C8B099 /* productsList.xml in Resources */,
-				AA0320A61B4C4E85002EB3B4 /* box_of_clothes.png in Resources */,
 				AACF99B01B399A4500E027D6 /* Entitlements.plist in Resources */,
+				AA7ED6811B52C426002D3732 /* box_of_toys.jpg in Resources */,
+				AA7ED67F1B52C426002D3732 /* box_of_car_acc.jpg in Resources */,
 				AACF999A1B39995300E027D6 /* LaunchScreen.xib in Resources */,
 				AACF99971B39995300E027D6 /* Images.xcassets in Resources */,
-				AA0320A81B4C4E85002EB3B4 /* box_of_toys.png in Resources */,
+				AA7ED6801B52C426002D3732 /* box_of_clothes.jpg in Resources */,
 				AA0320A71B4C4E85002EB3B4 /* box_of_nails.jpg in Resources */,
-				AAA78E591B4C9ED400787321 /* box_of_car_acc.png in Resources */,
 				AA51AEC21B39D6DF007D0350 /* products_bar_pic.png in Resources */,
-				AAA78E5B1B4C9F8400787321 /* box_of_wood.png in Resources */,
+				AA7ED6821B52C426002D3732 /* box_of_wood.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

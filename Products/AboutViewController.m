@@ -44,6 +44,7 @@
     [detailedInfoButton addTarget:self action:@selector(presentVC) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:aboutUsShort];
+    [aboutUsShort release];
     [self.view addSubview:detailedInfoButton];
 }
 
@@ -55,7 +56,7 @@
     AboutDetailViewController *aboutDetailedView = [[AboutDetailViewController alloc] init];
     UINavigationController *modalViewNavController =
     [[UINavigationController alloc] initWithRootViewController:aboutDetailedView];
-
+    [aboutDetailedView release];
     [modalViewNavController setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
 
     [self presentViewController:modalViewNavController animated:true completion:nil];

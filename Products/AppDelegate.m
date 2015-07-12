@@ -25,7 +25,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    UITableViewController *productsListTableViewController = [[[ProductsListTableViewController alloc] init] autorelease];
+    UITableViewController *productsListTableViewController = [[ProductsListTableViewController alloc] init];
     UIViewController *aboutViewController = [[AboutViewController alloc] init];
     UINavigationController *navController = [[[UINavigationController alloc]initWithRootViewController:productsListTableViewController]autorelease];
     
@@ -34,7 +34,7 @@
     [self.navController.navigationBar setTranslucent:NO];
     
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = [[NSArray arrayWithObjects:navController,aboutViewController, nil]autorelease];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController,aboutViewController, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     

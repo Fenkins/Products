@@ -35,10 +35,9 @@
 -(void) parseXMLFile {
     // We will do it here instead of writing that in viewDidLoad
     NSURL *xmlPath = [[NSBundle mainBundle]URLForResource:@"productsList" withExtension:@"xml" ];
-    self.parser = [[NSXMLParser alloc]initWithContentsOfURL:xmlPath];
+    self.parser = [[[NSXMLParser alloc]initWithContentsOfURL:xmlPath]autorelease];
     self.parser.delegate = self;
     [self.parser parse];
-//    [self.parser release];
 }
 
 -(void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
@@ -53,20 +52,20 @@
     
     if ([self.element isEqualToString:@"Name"]) {
         if (self.currentProductName == nil) {
-            self.currentProductName = [[NSMutableString alloc] initWithString:string];
+            self.currentProductName = [[[NSMutableString alloc] initWithString:string]autorelease];
         } else {
             [self.currentProductName appendString:string];
         }
     }
     if ([self.element isEqualToString:@"Description"]) {
         if (self.currentProductDescription == nil) {
-            self.currentProductDescription = [[NSMutableString alloc] initWithString:string];
+            self.currentProductDescription = [[[NSMutableString alloc] initWithString:string]autorelease];
         } else {
             [self.currentProductDescription appendString:string];
         }
     }    if ([self.element isEqualToString:@"Image"]) {
         if (self.currentProductImage == nil) {
-            self.currentProductImage = [[NSMutableString alloc] initWithString:string];
+            self.currentProductImage = [[[NSMutableString alloc] initWithString:string]autorelease];
         } else {
             [self.currentProductImage appendString:string];
         }
@@ -96,7 +95,7 @@
         thisProduct = nil;
         
         
-        //[self.element release];
+        //[self.element retain];
         self.element = nil;
     }
 }
