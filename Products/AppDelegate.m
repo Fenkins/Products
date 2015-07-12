@@ -23,17 +23,17 @@
 }
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]autorelease];
 
-    UITableViewController *productsListTableViewController = [[ProductsListTableViewController alloc] init];
-    UIViewController *aboutViewController = [[AboutViewController alloc] init];
+    UITableViewController *productsListTableViewController = [[[ProductsListTableViewController alloc] init]autorelease];
+    UIViewController *aboutViewController = [[[AboutViewController alloc] init]autorelease];
     UINavigationController *navController = [[[UINavigationController alloc]initWithRootViewController:productsListTableViewController]autorelease];
     
     [[UINavigationBar appearance] setBarStyle:UIBarStyleDefault];
     [[UINavigationBar appearance] setBarTintColor:[UIColor greenColor]];
     [self.navController.navigationBar setTranslucent:NO];
     
-    self.tabBarController = [[UITabBarController alloc] init];
+    self.tabBarController = [[[UITabBarController alloc] init]autorelease];
     self.tabBarController.viewControllers = [NSArray arrayWithObjects:navController,aboutViewController, nil];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];

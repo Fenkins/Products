@@ -35,7 +35,7 @@
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
-    self.productArray = [[NSMutableArray alloc] init];
+    self.productArray = [[[NSMutableArray alloc] init]autorelease];
     ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];
     [menuParser parseXMLFile];
     // The parser is done, we can release it immediately
@@ -45,6 +45,10 @@
     Products *secondProduct = self.productArray[1];
     NSLog(@"%@", firstProduct.productName);
     NSLog(@"%@", secondProduct.productName);
+}
+
+-(void)viewWillDisappear:(BOOL)animated {
+    [self.view removeFromSuperview];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -14,6 +14,7 @@
 
 @implementation ProductsDetailTableViewController
 @synthesize passedProduct;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"Name: %@", passedProduct.productDescription);
@@ -34,6 +35,9 @@
 //    
 //}
 
+-(void)viewWillDisappear:(BOOL)animated {
+    [self.view removeFromSuperview];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -71,6 +75,7 @@
     switch (indexPath.row) {
         case 0:
             cell.imageView.image = [UIImage imageNamed:passedProduct.productImage];
+            NSLog(@"%@",passedProduct.productImage);
             break;
         case 1:
             cell.textLabel.text = passedProduct.productName;
