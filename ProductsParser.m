@@ -68,6 +68,7 @@
             NSString *theImagePathString = [[NSBundle mainBundle] pathForResource:string ofType:@""];
             NSMutableString *theImagePathMutableString = [theImagePathString mutableCopy];
             self.currentProductImage = [[[NSMutableString alloc] initWithString:theImagePathMutableString]autorelease];
+            [theImagePathMutableString release];
         } else {
             [self.currentProductImage appendString:string];
         }

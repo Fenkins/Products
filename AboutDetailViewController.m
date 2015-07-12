@@ -45,6 +45,7 @@
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:true];
     [self.view removeFromSuperview];
 }
 
