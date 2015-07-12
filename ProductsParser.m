@@ -65,7 +65,9 @@
         }
     }    if ([self.element isEqualToString:@"Image"]) {
         if (self.currentProductImage == nil) {
-            self.currentProductImage = [[[NSMutableString alloc] initWithString:string]autorelease];
+            NSString *theImagePathString = [[NSBundle mainBundle] pathForResource:string ofType:@""];
+            NSMutableString *theImagePathMutableString = [theImagePathString mutableCopy];
+            self.currentProductImage = [[[NSMutableString alloc] initWithString:theImagePathMutableString]autorelease];
         } else {
             [self.currentProductImage appendString:string];
         }

@@ -74,7 +74,7 @@
     }
     switch (indexPath.row) {
         case 0:
-            cell.imageView.image = [UIImage imageNamed:passedProduct.productImage];
+            cell.imageView.image = [UIImage imageWithContentsOfFile:passedProduct.productImage];
             NSLog(@"%@",passedProduct.productImage);
             break;
         case 1:
