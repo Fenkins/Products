@@ -22,7 +22,7 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
 
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"Назад", @"Кнопка, возвращающая к списку продуктов") style:UIBarButtonItemStyleDone target:self action:@selector(backButtonPressed)];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"Закрыть", @"Кнопка, возвращающая к списку продуктов") style:UIBarButtonItemStyleDone target:self action:@selector(backButtonPressed)];
     self.navigationItem.leftBarButtonItem = backButton;
     [backButton release];
     
