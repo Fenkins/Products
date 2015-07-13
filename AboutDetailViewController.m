@@ -22,7 +22,7 @@
     [super viewDidLoad];
     [self.view setBackgroundColor:[UIColor whiteColor]];
 
-    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]initWithTitle:@"back" style:UIBarButtonItemStyleDone target:self action:@selector(backButtonPressed)];
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc]initWithTitle:NSLocalizedString(@"back", @"button which leads to previous controller") style:UIBarButtonItemStyleDone target:self action:@selector(backButtonPressed)];
     self.navigationItem.leftBarButtonItem = backButton;
     [backButton release];
     
