@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Products_list>
 	<Product id="0">
-		<Name>Box of chocolate</Name>
-		<Description>Box full of chocolate, very tasty</Description>
+		<Name>Коробка шоколада</Name>
+		<Description>Коробка, наполненная шоколадом, ммм, как вкусно</Description>
         <Image>box_of_choco.jpg</Image>
 	</Product>
 	<Product id="1">
-		<Name>Box of nails</Name>
-		<Description>Box full of nails. Don't eat those</Description>
+		<Name>Коробка с гвоздями</Name>
+		<Description>Коробка, набитая гвоздями. Не для еды</Description>
         <Image>box_of_nails.jpg</Image>
 	</Product>
 	<Product id="2">
-		<Name>Box of clothes</Name>
-		<Description>Tops, hoodies, jampers and so on</Description>
+		<Name>Коробка с одеждой</Name>
+		<Description>Топики, балахоны, джэмперы и прочее</Description>
         <Image>box_of_clothes.jpg</Image>
 	</Product>
 	<Product id="3">
-		<Name>Box of toys</Name>
-		<Description>Toys that kids love</Description>
+		<Name>Коробка с игрушками</Name>
+		<Description>Игрушки, которые так нравятся детям</Description>
         <Image>box_of_toys.jpg</Image>
 	</Product>
 	<Product id="4">
-		<Name>Box of wood</Name>
-		<Description>Cardboard box, filled with wood</Description>
+		<Name>Коробка с деревом</Name>
+		<Description>Картонная коробка, наполненная деревянными фигурками</Description>
         <Image>box_of_wood.jpg</Image>
 	</Product>
 	<Product id="5">
-		<Name>Box of car accessories</Name>
-		<Description>Various accessories for any car availible on the market</Description>
+		<Name>Коробка с запчастями</Name>
+		<Description>Запчасти для автомобилей. Преимущественно фары</Description>
         <Image>box_of_car_acc.jpg</Image>
 	</Product>
 </Products_list>
