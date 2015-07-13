@@ -19,6 +19,9 @@
     if (self) {
         self.title = NSLocalizedString(@"About us", @"Information about our company");
         self.tabBarItem.image = [UIImage imageNamed:@"about_us_bar_pic.png"];
+        if (self.tabBarItem.image == nil) {
+            NSLog(@"tabBarItem image is nil");
+        }
     }
     return self;
 }
@@ -29,9 +32,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     CGRect screenRect = [[UIScreen mainScreen]bounds];
+    
     UILabel *aboutUsShort = [[UILabel alloc]initWithFrame:CGRectMake(0.0, 0.0, screenRect.size.width*9/10, screenRect.size.height*3/8)];
     aboutUsShort.center = CGPointMake(screenRect.size.width/2, screenRect.size.height*3/10);
-//    aboutUsShort.backgroundColor = [UIColor lightGrayColor];
     aboutUsShort.text = NSLocalizedString(@"We are working with all kinds of boxes. Big boxes, small boxes, wooden, cardboard, stainless steel, you name it. \n Feel free to press on More Info button if interested", "Company description");
     [aboutUsShort setTextAlignment:NSTextAlignmentCenter];
     [aboutUsShort setNumberOfLines:6];
@@ -49,10 +52,7 @@
 }
 
 - (void) presentVC {
-    
-    NSLog(@"button is working");
-    
-    
+
     AboutDetailViewController *aboutDetailedView = [[AboutDetailViewController alloc] init];
     UINavigationController *modalViewNavController =
     [[UINavigationController alloc] initWithRootViewController:aboutDetailedView];

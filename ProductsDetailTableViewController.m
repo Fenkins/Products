@@ -17,23 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"Name: %@", passedProduct.productDescription);
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
-//UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"back" style:UIBarButtonItemStyleDone target:self action:@selector(cancel)];
-//self.navigationItem.leftBarButtonItem = backButton;
-
-//- (IBAction)cancel {
-//    
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//    
-//}
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:true];
@@ -76,7 +60,6 @@
     switch (indexPath.row) {
         case 0:
             cell.imageView.image = [UIImage imageWithContentsOfFile:passedProduct.productImage];
-            NSLog(@"%@",passedProduct.productImage);
             break;
         case 1:
             cell.textLabel.text = passedProduct.productName;
@@ -94,8 +77,6 @@
             cell.textLabel.text = @"Something goes wrong";
             break;
     }
-    // Configure the cell...
-    
     
     return cell;
 }

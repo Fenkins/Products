@@ -38,13 +38,6 @@
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     
-    
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    // Override point for customization after application launch.
-//    self.viewController = [[UIViewController alloc] init];
-//    self.window.rootViewController = self.viewController;
-//    [self.window makeKeyAndVisible];
-    
     return YES;
 }
 

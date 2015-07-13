@@ -11,6 +11,6 @@
 #import "ProductsParser.h"
 #import "ProductsDetailTableViewController.h"
 
-@interface ProductsListTableViewController : UITableViewController //<UITableViewDataSource,UITableViewDelegate>
+@interface ProductsListTableViewController : UITableViewController
 
 @end

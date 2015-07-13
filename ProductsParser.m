@@ -81,18 +81,12 @@
         
         [self.productArray addObject:thisProduct];
 
-        
         self.currentProductName = nil;
-        
-        
         self.currentProductDescription = nil;
-        
-        
         self.currentProductImage = nil;
         
         [thisProduct release];
         thisProduct = nil;
-        
         
         self.element = nil;
     }

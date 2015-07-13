@@ -7,7 +7,7 @@
 	</Product>
 	<Product id="1">
 		<Name>Box of nails</Name>
-		<Description>Box full of nails. Dont eat those</Description>
+		<Description>Box full of nails. Don't eat those</Description>
         <Image>box_of_nails.jpg</Image>
 	</Product>
 	<Product id="2">

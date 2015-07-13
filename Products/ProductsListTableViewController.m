@@ -23,7 +23,7 @@
         self.title = NSLocalizedString(@"Products", @"List of products availible");
         self.tabBarItem.image = [UIImage imageNamed:@"products_bar_pic.png"];
         if (self.tabBarItem.image == nil) {
-            NSLog(@"tabBarItem is nil");
+            NSLog(@"tabBarItem image is nil");
         }
     }
     return self;
@@ -32,19 +32,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
     self.productArray = [[[NSMutableArray alloc] init]autorelease];
     ProductsParser *menuParser = [[ProductsParser alloc] initWithArray:self.productArray];
     [menuParser parseXMLFile];
     // The parser is done, we can release it immediately
     [menuParser release];
-    NSLog(@"Count %i", (int)self.productArray.count);
-    Products *firstProduct = self.productArray[0];
-    Products *secondProduct = self.productArray[1];
-    NSLog(@"%@", firstProduct.productName);
-    NSLog(@"%@", secondProduct.productName);
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -89,7 +82,6 @@
     ProductsDetailTableViewController *productDetVC = [[ProductsDetailTableViewController alloc] initWithStyle:UITableViewStylePlain];
     Products *productSelected = self.productArray[indexPath.row];
     productDetVC.passedProduct = productSelected;
-
     
     [self.navigationController pushViewController:productDetVC animated:true];
     
