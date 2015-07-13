@@ -14,9 +14,6 @@
 		AA3E8C241B54456800F7EB82 /* box_of_nails.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA3E8C1E1B54456800F7EB82 /* box_of_nails.jpg */; };
 		AA3E8C251B54456800F7EB82 /* box_of_toys.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA3E8C1F1B54456800F7EB82 /* box_of_toys.jpg */; };
 		AA3E8C261B54456800F7EB82 /* box_of_wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA3E8C201B54456800F7EB82 /* box_of_wood.jpg */; };
-		AA3E8C431B54586500F7EB82 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA3E8C451B54586500F7EB82 /* Localizable.strings */; };
-		AA3E8C481B54586600F7EB82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA3E8C4A1B54586600F7EB82 /* InfoPlist.strings */; };
-		AA3E8C4C1B54586600F7EB82 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA3E8C4B1B54586600F7EB82 /* InfoPlist.strings */; };
 		AA51AEC01B39D6C0007D0350 /* about_us_bar_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = AA51AEBF1B39D6C0007D0350 /* about_us_bar_pic.png */; };
 		AA51AEC21B39D6DF007D0350 /* products_bar_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = AA51AEC11B39D6DF007D0350 /* products_bar_pic.png */; };
 		AA9D1BEF1B46B89000C8B099 /* productsList.xml in Resources */ = {isa = PBXBuildFile; fileRef = AA9D1BEE1B46B89000C8B099 /* productsList.xml */; };
@@ -53,10 +50,6 @@
 		AA3E8C1E1B54456800F7EB82 /* box_of_nails.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = box_of_nails.jpg; path = boxesImages/box_of_nails.jpg; sourceTree = "<group>"; };
 		AA3E8C1F1B54456800F7EB82 /* box_of_toys.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = box_of_toys.jpg; path = boxesImages/box_of_toys.jpg; sourceTree = "<group>"; };
 		AA3E8C201B54456800F7EB82 /* box_of_wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = box_of_wood.jpg; path = boxesImages/box_of_wood.jpg; sourceTree = "<group>"; };
-		AA3E8C401B5457E900F7EB82 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		AA3E8C441B54586500F7EB82 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AA3E8C491B54586600F7EB82 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AA3E8C4B1B54586600F7EB82 /* InfoPlist.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		AA51AEBF1B39D6C0007D0350 /* about_us_bar_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_us_bar_pic.png; sourceTree = "<group>"; };
 		AA51AEC11B39D6DF007D0350 /* products_bar_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = products_bar_pic.png; sourceTree = "<group>"; };
 		AA9D1BEE1B46B89000C8B099 /* productsList.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = productsList.xml; sourceTree = "<group>"; };
@@ -189,8 +182,6 @@
 		AACF998F1B39995300E027D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA3E8C4A1B54586600F7EB82 /* InfoPlist.strings */,
-				AA3E8C451B54586500F7EB82 /* Localizable.strings */,
 				AACF99901B39995300E027D6 /* Info.plist */,
 				AACF99911B39995300E027D6 /* main.m */,
 				AACF99AF1B399A4500E027D6 /* Entitlements.plist */,
@@ -210,7 +201,6 @@
 		AACF99A31B39995300E027D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA3E8C4B1B54586600F7EB82 /* InfoPlist.strings */,
 				AACF99A41B39995300E027D6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -299,8 +289,6 @@
 				AAAE7FDB1B51663D0032DD59 /* about_us_detail_Box.png in Resources */,
 				AA3E8C241B54456800F7EB82 /* box_of_nails.jpg in Resources */,
 				AA3E8C211B54456800F7EB82 /* box_of_car_acc.jpg in Resources */,
-				AA3E8C431B54586500F7EB82 /* Localizable.strings in Resources */,
-				AA3E8C481B54586600F7EB82 /* InfoPlist.strings in Resources */,
 				AA51AEC01B39D6C0007D0350 /* about_us_bar_pic.png in Resources */,
 				AA9D1BEF1B46B89000C8B099 /* productsList.xml in Resources */,
 				AA3E8C251B54456800F7EB82 /* box_of_toys.jpg in Resources */,
@@ -318,7 +306,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA3E8C4C1B54586600F7EB82 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,27 +346,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AA3E8C451B54586500F7EB82 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA3E8C441B54586500F7EB82 /* ru */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		AA3E8C4A1B54586600F7EB82 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA3E8C491B54586600F7EB82 /* ru */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		AACF99981B39995300E027D6 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				AACF99991B39995300E027D6 /* Base */,
-				AA3E8C401B5457E900F7EB82 /* ru */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

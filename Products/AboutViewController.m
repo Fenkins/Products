@@ -43,7 +43,7 @@
     detailedInfoButton.center = CGPointMake(screenRect.size.width/2, screenRect.size.height*4/6);
     detailedInfoButton.backgroundColor = [UIColor lightGrayColor];
     detailedInfoButton.layer.cornerRadius = 20;
-    [detailedInfoButton setTitle:NSLocalizedString(@"More info", @"Button that leads to detailed company info page") forState:UIControlStateNormal];
+    [detailedInfoButton setTitle:@"More Info" forState:UIControlStateNormal];
     [detailedInfoButton addTarget:self action:@selector(presentVC) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:aboutUsShort];
