@@ -10,7 +10,6 @@
 #import "ProductsParser.h"
 #import "Products.h"
 
-// This will create private properties
 @interface ProductsParser()
 @property NSXMLParser *parser;
 @property NSString *element;
@@ -33,7 +32,6 @@
 }
 
 -(void) parseXMLFile {
-    // We will do it here instead of writing that in viewDidLoad
     NSURL *xmlPath = [[NSBundle mainBundle]URLForResource:@"productsList" withExtension:@"xml" ];
     self.parser = [[[NSXMLParser alloc]initWithContentsOfURL:xmlPath]autorelease];
     self.parser.delegate = self;
