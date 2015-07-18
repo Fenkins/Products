@@ -13,6 +13,4 @@
 
 -(void) presentVC;
 
--(void) dealloc;
-
 @end

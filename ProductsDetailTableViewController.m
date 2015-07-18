@@ -75,7 +75,6 @@
 
 -(void) dealloc {
     [passedProduct release];
-    [self.tableView release];
     [super dealloc];
 }
 
