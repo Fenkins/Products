@@ -61,4 +61,9 @@
     [modalViewNavController release];
 }
 
+-(void) dealloc {
+    
+    [super dealloc];
+}
+
 @end

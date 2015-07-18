@@ -78,4 +78,13 @@
     [productDetVC release];
 }
 
+-(void) dealloc {
+    [self.productArray release];
+    
+    [ProductsDetailTableViewController release];
+
+    [self.tableView release];
+    [super dealloc];
+}
+
 @end

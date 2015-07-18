@@ -73,4 +73,10 @@
     [tableView deselectRowAtIndexPath:indexPath animated:true];
 }
 
+-(void) dealloc {
+    [passedProduct release];
+    [self.tableView release];
+    [super dealloc];
+}
+
 @end
