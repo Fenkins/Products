@@ -16,4 +16,6 @@
 -(id) initWithArray:(NSMutableArray *) productArray;
 -(void) parseXMLFile;
 
+-(void) dealloc;
+
 @end
