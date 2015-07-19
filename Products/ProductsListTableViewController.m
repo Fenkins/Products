@@ -69,10 +69,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:true];
 
-    ProductsDetailTableViewController *productDetVC = [[ProductsDetailTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    ProductsDetailViewController *productDetVC = [[ProductsDetailViewController alloc] initWithNibName:@"ProductsDetailViewController" bundle:nil];
     Products *productSelected = self.productArray[indexPath.row];
     productDetVC.passedProduct = productSelected;
-    
     [self.navigationController pushViewController:productDetVC animated:true];
     
     [productDetVC release];

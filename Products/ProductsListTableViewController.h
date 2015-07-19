@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Products.h"
 #import "ProductsParser.h"
-#import "ProductsDetailTableViewController.h"
+#import "ProductsDetailViewController.h"
 
 @interface ProductsListTableViewController : UITableViewController
 

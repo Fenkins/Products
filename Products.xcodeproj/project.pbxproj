@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AA03209F1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA03209E1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m */; };
+		AA0AE7281B5C2F20009349A8 /* ProductsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0AE7261B5C2F20009349A8 /* ProductsDetailViewController.m */; };
+		AA0AE7291B5C2F20009349A8 /* ProductsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0AE7271B5C2F20009349A8 /* ProductsDetailViewController.xib */; };
 		AA3E8C211B54456800F7EB82 /* box_of_car_acc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA3E8C1B1B54456800F7EB82 /* box_of_car_acc.jpg */; };
 		AA3E8C221B54456800F7EB82 /* box_of_choco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA3E8C1C1B54456800F7EB82 /* box_of_choco.jpg */; };
 		AA3E8C231B54456800F7EB82 /* box_of_clothes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA3E8C1D1B54456800F7EB82 /* box_of_clothes.jpg */; };
@@ -44,6 +46,9 @@
 /* Begin PBXFileReference section */
 		AA03209D1B4C0F44002EB3B4 /* ProductsDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsDetailTableViewController.h; sourceTree = "<group>"; };
 		AA03209E1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsDetailTableViewController.m; sourceTree = "<group>"; };
+		AA0AE7251B5C2F20009349A8 /* ProductsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsDetailViewController.h; sourceTree = "<group>"; };
+		AA0AE7261B5C2F20009349A8 /* ProductsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsDetailViewController.m; sourceTree = "<group>"; };
+		AA0AE7271B5C2F20009349A8 /* ProductsDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductsDetailViewController.xib; sourceTree = "<group>"; };
 		AA3E8C1B1B54456800F7EB82 /* box_of_car_acc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = box_of_car_acc.jpg; path = boxesImages/box_of_car_acc.jpg; sourceTree = "<group>"; };
 		AA3E8C1C1B54456800F7EB82 /* box_of_choco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = box_of_choco.jpg; path = boxesImages/box_of_choco.jpg; sourceTree = "<group>"; };
 		AA3E8C1D1B54456800F7EB82 /* box_of_clothes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = box_of_clothes.jpg; path = boxesImages/box_of_clothes.jpg; sourceTree = "<group>"; };
@@ -146,6 +151,9 @@
 				AACF99B21B399DEB00E027D6 /* ProductsListTableViewController.m */,
 				AA03209D1B4C0F44002EB3B4 /* ProductsDetailTableViewController.h */,
 				AA03209E1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m */,
+				AA0AE7251B5C2F20009349A8 /* ProductsDetailViewController.h */,
+				AA0AE7261B5C2F20009349A8 /* ProductsDetailViewController.m */,
+				AA0AE7271B5C2F20009349A8 /* ProductsDetailViewController.xib */,
 				AACF99B41B399E7200E027D6 /* AboutViewController.h */,
 				AACF99B51B399E7200E027D6 /* AboutViewController.m */,
 				AAAE7FD71B507DA10032DD59 /* AboutDetailViewController.h */,
@@ -296,6 +304,7 @@
 				AA3E8C231B54456800F7EB82 /* box_of_clothes.jpg in Resources */,
 				AACF999A1B39995300E027D6 /* LaunchScreen.xib in Resources */,
 				AA3E8C221B54456800F7EB82 /* box_of_choco.jpg in Resources */,
+				AA0AE7291B5C2F20009349A8 /* ProductsDetailViewController.xib in Resources */,
 				AACF99971B39995300E027D6 /* Images.xcassets in Resources */,
 				AA51AEC21B39D6DF007D0350 /* products_bar_pic.png in Resources */,
 				AA3E8C261B54456800F7EB82 /* box_of_wood.jpg in Resources */,
@@ -319,6 +328,7 @@
 				AA9D1BF31B46BC4800C8B099 /* Products.m in Sources */,
 				AACF99951B39995300E027D6 /* AppDelegate.m in Sources */,
 				AACF99921B39995300E027D6 /* main.m in Sources */,
+				AA0AE7281B5C2F20009349A8 /* ProductsDetailViewController.m in Sources */,
 				AAAE7FD91B507DA10032DD59 /* AboutDetailViewController.m in Sources */,
 				AA03209F1B4C0F44002EB3B4 /* ProductsDetailTableViewController.m in Sources */,
 				AACF99B61B399E7200E027D6 /* AboutViewController.m in Sources */,

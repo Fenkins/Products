@@ -8,10 +8,6 @@
 
 #import "ProductsDetailTableViewController.h"
 
-@interface ProductsDetailTableViewController ()
-
-@end
-
 @implementation ProductsDetailTableViewController
 @synthesize passedProduct;
 
