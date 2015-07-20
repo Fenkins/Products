@@ -25,42 +25,23 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1c-v3-JVs">
                                     <rect key="frame" x="0.0" y="316" width="600" height="284"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="292" id="Tpd-47-k6u"/>
-                                    </constraints>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
-                                    <variation key="default">
-                                        <mask key="constraints">
-                                            <exclude reference="Tpd-47-k6u"/>
-                                        </mask>
-                                    </variation>
-                                    <variation key="widthClass=compact" misplaced="YES">
-                                        <rect key="frame" x="0.0" y="308" width="400" height="292"/>
-                                        <mask key="constraints">
-                                            <exclude reference="Tpd-47-k6u"/>
-                                        </mask>
-                                    </variation>
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pFj-G8-tGP">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="308"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="300" id="bel-uE-OHx"/>
-                                        <constraint firstAttribute="width" constant="400" id="lga-8i-rgo">
-                                            <variation key="widthClass=compact" constant="400"/>
-                                        </constraint>
                                     </constraints>
                                     <variation key="default">
                                         <mask key="constraints">
                                             <exclude reference="bel-uE-OHx"/>
-                                            <exclude reference="lga-8i-rgo"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
                                         <mask key="constraints">
                                             <include reference="bel-uE-OHx"/>
-                                            <include reference="lga-8i-rgo"/>
                                         </mask>
                                     </variation>
                                 </imageView>
@@ -70,10 +51,10 @@
                                 <constraint firstItem="P1c-v3-JVs" firstAttribute="top" secondItem="pFj-G8-tGP" secondAttribute="bottom" constant="8" symbolic="YES" id="25J-1S-iGy"/>
                                 <constraint firstAttribute="bottom" secondItem="P1c-v3-JVs" secondAttribute="bottom" id="5IC-2p-LFE"/>
                                 <constraint firstItem="pFj-G8-tGP" firstAttribute="leading" secondItem="P1c-v3-JVs" secondAttribute="leading" id="W2T-d7-N1v"/>
-                                <constraint firstAttribute="width" secondItem="P1c-v3-JVs" secondAttribute="width" id="Xqa-5H-Tg6"/>
                                 <constraint firstItem="pFj-G8-tGP" firstAttribute="top" secondItem="vKR-9l-ng6" secondAttribute="top" id="fqG-Wa-hxI"/>
                                 <constraint firstItem="pFj-G8-tGP" firstAttribute="trailing" secondItem="P1c-v3-JVs" secondAttribute="trailing" id="fuf-xc-f0X"/>
-                                <constraint firstItem="pFj-G8-tGP" firstAttribute="leading" secondItem="vKR-9l-ng6" secondAttribute="leading" id="oah-hD-lbx"/>
+                                <constraint firstAttribute="width" secondItem="P1c-v3-JVs" secondAttribute="width" id="hS6-dA-8lV"/>
+                                <constraint firstAttribute="centerX" secondItem="pFj-G8-tGP" secondAttribute="centerX" id="xTP-Uq-aW3"/>
                             </constraints>
                             <variation key="default">
                                 <mask key="subviews">
@@ -83,14 +64,13 @@
                                     <exclude reference="W2T-d7-N1v"/>
                                     <exclude reference="fqG-Wa-hxI"/>
                                     <exclude reference="fuf-xc-f0X"/>
-                                    <exclude reference="oah-hD-lbx"/>
+                                    <exclude reference="xTP-Uq-aW3"/>
                                     <exclude reference="25J-1S-iGy"/>
                                     <exclude reference="5IC-2p-LFE"/>
-                                    <exclude reference="Xqa-5H-Tg6"/>
+                                    <exclude reference="hS6-dA-8lV"/>
                                 </mask>
                             </variation>
-                            <variation key="widthClass=compact" misplaced="YES">
-                                <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                            <variation key="widthClass=compact">
                                 <mask key="subviews">
                                     <include reference="pFj-G8-tGP"/>
                                 </mask>
@@ -98,10 +78,10 @@
                                     <include reference="W2T-d7-N1v"/>
                                     <include reference="fqG-Wa-hxI"/>
                                     <include reference="fuf-xc-f0X"/>
-                                    <include reference="oah-hD-lbx"/>
+                                    <include reference="xTP-Uq-aW3"/>
                                     <include reference="25J-1S-iGy"/>
                                     <include reference="5IC-2p-LFE"/>
-                                    <include reference="Xqa-5H-Tg6"/>
+                                    <include reference="hS6-dA-8lV"/>
                                 </mask>
                             </variation>
                         </view>
