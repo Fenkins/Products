@@ -13,11 +13,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _productImageView.image = [UIImage imageWithContentsOfFile:passedProduct.productImage];
+    _productScrollImageView.image = [UIImage imageWithContentsOfFile:passedProduct.productImage];
     _textLabel.text = passedProduct.productDescription;
     _textLabel.lineBreakMode = 0;
     _textLabel.numberOfLines = 0;
     [_textLabel sizeToFit];
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:true];
+    _scrollView.contentSize = CGSizeMake(800.0, 800.0);
+    _scrollView.scrollEnabled = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,8 +43,8 @@
 
 - (void)dealloc {
     [_textLabel release];
-    [_productImageView release];
-    [_productImageView release];
+    [_productScrollImageView release];
+    [_scrollView release];
     [super dealloc];
 }
 @end
