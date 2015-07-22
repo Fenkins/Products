@@ -21,17 +21,9 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1F-cE-kh8">
                             <rect key="frame" x="0.0" y="300" width="600" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="600" id="Gi2-0t-9d6"/>
-                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
-                            <variation key="default">
-                                <mask key="constraints">
-                                    <exclude reference="Gi2-0t-9d6"/>
-                                </mask>
-                            </variation>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mo8-fX-NbB">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
