@@ -13,7 +13,6 @@
 
 @property (retain, nonatomic) IBOutlet UIImageView *productScrollImageView;
 @property (retain, nonatomic) IBOutlet UILabel *textLabel;
-@property (retain, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @property (retain, nonatomic) Products *passedProduct;
 

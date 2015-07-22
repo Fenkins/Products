@@ -20,12 +20,6 @@
     [_textLabel sizeToFit];
 }
 
--(void) viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:true];
-    _scrollView.contentSize = CGSizeMake(800.0, 800.0);
-    _scrollView.scrollEnabled = YES;
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -44,7 +38,6 @@
 - (void)dealloc {
     [_textLabel release];
     [_productScrollImageView release];
-    [_scrollView release];
     [super dealloc];
 }
 @end
