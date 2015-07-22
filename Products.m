@@ -10,7 +10,9 @@
 
 @implementation Products
 
--(id) initWithName:(NSString *)name description:(NSString *)description image:(NSString *)image {
+-(id) initWithName:(NSString *)name
+       description:(NSString *)description
+             image:(NSString *)image {
     self = [super init];
     
     if (self) {
@@ -21,5 +23,11 @@
     return self;
 }
 
+-(void) dealloc {
+    [self.productName release];
+    [self.productDescription release];
+    [self.productImage release];
+    [super dealloc];
+}
 
 @end

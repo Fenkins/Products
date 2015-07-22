@@ -13,4 +13,6 @@
 
 @property (retain,nonatomic) Products *passedProduct;
 
+-(void) dealloc;
+
 @end

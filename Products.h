@@ -20,5 +20,6 @@
        description: (NSString *) description
              image: (NSString *) image;
 
+-(void) dealloc;
 
 @end

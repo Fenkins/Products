@@ -8,10 +8,6 @@
 
 #import "ProductsDetailTableViewController.h"
 
-@interface ProductsDetailTableViewController ()
-
-@end
-
 @implementation ProductsDetailTableViewController
 @synthesize passedProduct;
 
@@ -71,6 +67,11 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:true];
+}
+
+-(void) dealloc {
+    [passedProduct release];
+    [super dealloc];
 }
 
 @end
