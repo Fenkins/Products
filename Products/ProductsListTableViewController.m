@@ -78,7 +78,6 @@
 }
 
 -(void) dealloc {
-    [self.productArray release];
     [super dealloc];
 }
 

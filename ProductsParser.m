@@ -91,10 +91,6 @@
 }
 
 -(void) dealloc {
-    [self.productArray release];
-    [self.currentProductName release];
-    [self.currentProductDescription release];
-    [self.currentProductImage release];
     [super dealloc];
 }
 

@@ -36,6 +36,7 @@
 */
 
 - (void)dealloc {
+    [passedProduct release];
     [_textLabel release];
     [_productScrollImageView release];
     [super dealloc];
