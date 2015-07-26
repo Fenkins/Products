@@ -77,8 +77,4 @@
     [productDetVC release];
 }
 
--(void) dealloc {
-    [super dealloc];
-}
-
 @end

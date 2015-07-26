@@ -13,5 +13,4 @@
 
 @interface ProductsListTableViewController : UITableViewController
 
--(void) dealloc;
 @end
